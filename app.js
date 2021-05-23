@@ -52,7 +52,7 @@ async function GetData(Item_No){
 
  //***Reset Screen***
  function ResetScreen(Item_No){
-    document.getElementById('Intro').style.display='block';
+    document.getElementById('Intro').style.display='none';
     document.getElementById('Size_Available').style.display='block';
     document.getElementById('Price').style.display='block';
 
