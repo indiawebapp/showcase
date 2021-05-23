@@ -5,7 +5,7 @@ var Item_No=0;
 
 AppInitialize()
 function AppInitialize(){
-    
+
     document.getElementById('BtnPrevious').style.display='none';
     document.getElementById('BtnNext').style.display='none';
     document.getElementById('ItemNo').style.display='none';
@@ -28,9 +28,9 @@ async function GetData(Item_No){
     document.getElementById('Size_Available').textContent='Size: '+columns[4];
     document.getElementById('Description').textContent=columns[5];
     document.getElementById('Price').textContent="Price: "+columns[6]+'/- only'
-    document.getElementById('Image_Code').src="/images/"+columns[7];
-    
-    
+    document.getElementById('Image_Code').src="images/"+columns[7];
+
+
     if (Item_No==0) {
         document.getElementById('BtnPrevious').style.display='none';
         document.getElementById('BtnStart').style.display='none';
@@ -41,13 +41,13 @@ async function GetData(Item_No){
     if (Item_No>myTable.length-3) {
         document.getElementById('BtnNext').style.display='none';
         document.getElementById('BtnPrevious').style.display='block';
-        
+
     } else{
         document.getElementById('BtnNext').style.display='block';
-        
+
     }
-   
-    
+
+
  }
 
  //***Reset Screen***
@@ -55,10 +55,10 @@ async function GetData(Item_No){
     document.getElementById('Intro').style.display='block';
     document.getElementById('Size_Available').style.display='block';
     document.getElementById('Price').style.display='block';
-    
 
 
-    
+
+
 
 }
 
@@ -69,7 +69,7 @@ function callStartQuestion(){
     Item_No=0
     GetData(Item_No);
     document.getElementById('ItemNo').textContent=Item_No;
-    
+
 }
 
 document.getElementById('BtnNext').addEventListener('click',callNextItem);
@@ -90,8 +90,3 @@ function callPreviousItem(){
     GetData(Item_No);
     document.getElementById('ItemNo').textContent=Item_No;
 }
-
-
-
-
-
