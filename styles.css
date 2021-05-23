@@ -1,0 +1,43 @@
+.jumbotron{
+    margin-bottom: 5px;
+    padding-top: 20px;
+   
+    background-color:#E3F2FD;
+}
+
+
+
+#Intro{
+    color: #42A5F5;
+}
+
+#Image_Code{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+#BtnPrevious{
+    float: left;
+    width: 100px;
+}
+
+#BtnNext{
+    float: right;
+    width:100px;
+    margin-bottom: 5px;
+    
+}
+
+#BtnStart{
+    float: right;
+    width:100px; 
+}
+
+
+.Legal{
+    font-size: small;
+    margin-left: 10px;
+}
